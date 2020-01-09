@@ -1,0 +1,87 @@
+@charset "UTF-8";
+/* 页面左右间距 */
+/* 文字尺寸 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+/* 行为相关颜色 */
+.input-content {
+  padding: 60rpx;
+}
+.input-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 30rpx;
+  background: #f8f6fc;
+  height: 120rpx;
+  border-radius: 4px;
+  margin-bottom: 50rpx;
+}
+.input-item:last-child {
+    margin-bottom: 0;
+}
+.input-item .tit {
+    height: 50rpx;
+    line-height: 56rpx;
+    font-size: 26rpx;
+    color: #606266;
+}
+.input-item input {
+    height: 60rpx;
+    font-size: 30rpx;
+    color: #303133;
+    width: 100%;
+}
+/* 兑换积分按钮css */
+.getCode-btn {
+  width: 300rpx;
+  height: 76rpx;
+  line-height: 76rpx;
+  border-radius: 50px;
+  margin-top: 10rpx;
+  background: #4cd964;
+  color: #fff;
+  font-size: 32rpx;
+}
+.getCode-btn:after {
+    border-radius: 100px;
+}
+/* 返回按钮css */
+.toReturn-btn {
+  width: 300rpx;
+  height: 76rpx;
+  line-height: 76rpx;
+  border-radius: 50px;
+  margin-top: 50rpx;
+  background: #f0ad4e;
+  color: #fff;
+  font-size: 32rpx;
+}
+.toReturn-btn:after {
+    border-radius: 100px;
+}
+.msgview {
+  padding: 60rpx;
+  height: 76rpx;
+  text-align: center;
+}
+.msgtext {
+  font-size: 26rpx;
+  color: #606266;
+}
+

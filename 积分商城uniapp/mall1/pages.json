@@ -1,0 +1,164 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	
+		{
+		    "path" : "pages/product/product",
+		    "style" : {
+				"navigationBarTitleText":"商品"
+			}
+		}
+		,{
+			"path" : "pages/my/my",
+			"style": {
+				"navigationBarTitleText": "我的",
+				// #ifdef MP
+				"navigationStyle": "custom",
+				// #endif
+				"app-plus": {
+					"bounce": "none",
+					"titleNView": {
+						"type": "transparent",
+						"buttons": [{
+								"fontSrc": "/static/yticon.ttf",
+								"text": "\ue60f",
+								"fontSize": "24",
+								"color": "#303133",
+								"width": "46px",
+								"background": "rgba(0,0,0,0)"
+							},
+							{
+								"fontSrc": "/static/yticon.ttf",
+								"text": "\ue744",
+								"fontSize": "28",
+								"color": "#303133",
+								"background": "rgba(0,0,0,0)",
+								"redDot": true
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"path" : "pages/login/login",
+			"style" : {
+				"navigationBarTitleText":"登录"
+			}
+		},
+		{
+			"path" : "pages/login/register",
+			"style" : {
+				"navigationBarTitleText":"注册"
+			}
+		},
+		{
+			"path" : "pages/my/getIntegral",
+			"style" : {
+				"navigationBarTitleText":"兑换积分"
+			}
+		}
+        
+        ,{
+            "path" : "pages/order/order",
+            "style" : {
+				"navigationBarTitleText":"订单",
+				"enablePullDownRefresh":true,
+				"app-plus": {
+					"bounce": "none",
+					"titleNView": {
+						"type": "transparent",
+						"buttons": [{
+								"fontSrc": "/static/yticon.ttf",
+								"text": "\ue60f",
+								"fontSize": "24",
+								"color": "#303133",
+								"width": "46px",
+								"background": "rgba(0,0,0,0)"
+							},
+							{
+								"fontSrc": "/static/yticon.ttf",
+								"text": "\ue744",
+								"fontSize": "28",
+								"color": "#303133",
+								"background": "rgba(0,0,0,0)",
+								"redDot": true
+							}
+						]
+					}
+				}
+			}
+        }
+        ,{
+            "path" : "pages/order/order-detail/order-detail",
+            "style" : {
+				"navigationBarTitleText":"订单详情"
+			}
+        }
+        ,{
+            "path" : "pages/order/Buy/Buy",
+            "style" : {
+				"navigationBarTitleText":"购买"
+			}
+        },
+		{
+			"path" : "pages/complaint/complaint",
+			"style" : {
+				"navigationBarTitleText":"举报"
+			}
+		},
+		{
+			"path" : "pages/set/set",
+			"style" : {
+				"navigationBarTitleText":"设置页面"
+			}
+		},
+		{
+			"path" : "pages/my/modify",
+			"style" : {
+				"navigationBarTitleText":"修改个人信息"
+			}
+		},
+		{
+			"path" : "pages/set/modify_password",
+			"style" : {
+				"navigationBarTitleText":"修改密码"
+			}
+		}
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar":{
+	    "color" : "#707070",
+	    "selectedColor" : "#DE533A",
+	    "list" : [
+	        {
+	            "pagePath" : "pages/product/product",
+	            "text" : "产品",
+	            "iconPath" : "static/tab-cate.png",
+	            "selectedIconPath" : "static/tab-cate-current.png"
+	        },
+	        {
+	            "pagePath" : "pages/order/order",
+	            "text" : "订单",
+	            "iconPath" : "static/tab-cart.png",
+	            "selectedIconPath" : "static/tab-cart-current.png"
+	        },
+			{
+				"pagePath":"pages/complaint/complaint",	
+			    "text" : "举报",
+			    "iconPath" : "static/nav2.png",
+			    "selectedIconPath" : "static/nav2-a.png"
+			},
+	        {
+	            "pagePath" : "pages/my/my", 
+	            "text" : "我的",
+	            "iconPath" : "static/nav3.png",
+	            "selectedIconPath" : "static/nav3-a.png"
+	        }
+	    ]
+	}
+}

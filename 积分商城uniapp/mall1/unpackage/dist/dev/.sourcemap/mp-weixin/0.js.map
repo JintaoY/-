@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///D:/javaeeeclipse/vue/uniapp/hxfenxiao/mall/mall/main.js"],"names":[],"mappings":";;;;;;;;;;AAAA,wCAAmB,iD","file":"0.js","sourcesContent":["import 'uni-pages';import '@dcloudio/uni-stat';"],"sourceRoot":""}
