@@ -1,0 +1,1402 @@
+目标package: generator
+
+<!-- http://freemarker.apache.org/docs/ref_builtins_date.html -->
+当前时间：
+2019-12-11
+10:43:28
+2019-12-11 10:43:28
+
+所有配置的属性信息:
+targetPackage - generator
+templatePath - generator/test-all.ftl
+singleMode - false
+targetProject - ../hxfenxiao-api/src/test/resources
+fileName - TestAll.txt
+
+****************************************************************************************
+实体和表的信息：
+表名：distributor
+变量名：distributor
+小写名：distributor
+类名：Distributor
+全名：net.seehope.hxfenxiao.pojo.Distributor
+包名：net.seehope.hxfenxiao.pojo
+
+列的信息：
+=====================================
+    主键：
+        -------------------------------------
+        列名：did
+        列类型：VARCHAR
+        字段名：did
+        注释：did 经销商ID,格式为1,  1.1  1.1.1
+        类型包名：java.lang
+        类型短名：String
+        类型全名：java.lang.String
+        是否主键：false
+        是否可空：false
+        是否为BLOB列：false
+        是否为String列：true
+        是否为字符串列：true
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：32
+        列精度：0
+
+    基础列：
+        -------------------------------------
+        列名：dphoneNum
+        列类型：VARCHAR
+        字段名：dphonenum
+        注释：dphoneNum 手机号码
+        类型包名：java.lang
+        类型短名：String
+        类型全名：java.lang.String
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：true
+        是否为字符串列：true
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：128
+        列精度：0
+        -------------------------------------
+        列名：dname
+        列类型：VARCHAR
+        字段名：dname
+        注释：dname 经销商姓名
+        类型包名：java.lang
+        类型短名：String
+        类型全名：java.lang.String
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：true
+        是否为字符串列：true
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：32
+        列精度：0
+        -------------------------------------
+        列名：dsex
+        列类型：CHAR
+        字段名：dsex
+        注释：dsex 经销商性别
+        类型包名：java.lang
+        类型短名：String
+        类型全名：java.lang.String
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：true
+        是否为字符串列：true
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：1
+        列精度：0
+        -------------------------------------
+        列名：demail
+        列类型：VARCHAR
+        字段名：demail
+        注释：demail 经销商邮箱
+        类型包名：java.lang
+        类型短名：String
+        类型全名：java.lang.String
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：true
+        是否为字符串列：true
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：32
+        列精度：0
+        -------------------------------------
+        列名：dstatus
+        列类型：INTEGER
+        字段名：dstatus
+        注释：dstatus 经销商状态0 未开启 1 开启
+        类型包名：java.lang
+        类型短名：Integer
+        类型全名：java.lang.Integer
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：false
+        是否为字符串列：false
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：10
+        列精度：0
+        -------------------------------------
+        列名：dintegral
+        列类型：INTEGER
+        字段名：dintegral
+        注释：dintegral 经销商的积分，当被投诉被扣除积分
+        类型包名：java.lang
+        类型短名：Integer
+        类型全名：java.lang.Integer
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：false
+        是否为字符串列：false
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：10
+        列精度：0
+        -------------------------------------
+        列名：hid
+        列类型：VARCHAR
+        字段名：hid
+        注释：hid 上级经销商did
+        类型包名：java.lang
+        类型短名：String
+        类型全名：java.lang.String
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：true
+        是否为字符串列：true
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：32
+        列精度：0
+
+    Blob列：
+=====================================
+全部列：
+    列名 - 字段名
+        did - did
+        dphoneNum - dphonenum
+        dname - dname
+        dsex - dsex
+        demail - demail
+        dstatus - dstatus
+        dintegral - dintegral
+        hid - hid
+****************************************************************************************
+实体和表的信息：
+表名：complaint
+变量名：complaint
+小写名：complaint
+类名：Complaint
+全名：net.seehope.hxfenxiao.pojo.Complaint
+包名：net.seehope.hxfenxiao.pojo
+
+列的信息：
+=====================================
+    主键：
+        -------------------------------------
+        列名：cid
+        列类型：VARCHAR
+        字段名：cid
+        注释：cid 投诉ID
+        类型包名：java.lang
+        类型短名：String
+        类型全名：java.lang.String
+        是否主键：false
+        是否可空：false
+        是否为BLOB列：false
+        是否为String列：true
+        是否为字符串列：true
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：128
+        列精度：0
+
+    基础列：
+        -------------------------------------
+        列名：userid
+        列类型：VARCHAR
+        字段名：userid
+        注释：userid 用户ID
+        类型包名：java.lang
+        类型短名：String
+        类型全名：java.lang.String
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：true
+        是否为字符串列：true
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：128
+        列精度：0
+        -------------------------------------
+        列名：did
+        列类型：VARCHAR
+        字段名：did
+        注释：did 经销商ID
+        类型包名：java.lang
+        类型短名：String
+        类型全名：java.lang.String
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：true
+        是否为字符串列：true
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：128
+        列精度：0
+        -------------------------------------
+        列名：content
+        列类型：VARCHAR
+        字段名：content
+        注释：content 投诉内容
+        类型包名：java.lang
+        类型短名：String
+        类型全名：java.lang.String
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：true
+        是否为字符串列：true
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：128
+        列精度：0
+        -------------------------------------
+        列名：cstatus
+        列类型：INTEGER
+        字段名：cstatus
+        注释：cstatus 处理状态 0未处理 1已处理
+        类型包名：java.lang
+        类型短名：Integer
+        类型全名：java.lang.Integer
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：false
+        是否为字符串列：false
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：10
+        列精度：0
+
+    Blob列：
+=====================================
+全部列：
+    列名 - 字段名
+        cid - cid
+        userid - userid
+        did - did
+        content - content
+        cstatus - cstatus
+****************************************************************************************
+实体和表的信息：
+表名：igorder
+变量名：igorder
+小写名：igorder
+类名：Igorder
+全名：net.seehope.hxfenxiao.pojo.Igorder
+包名：net.seehope.hxfenxiao.pojo
+
+列的信息：
+=====================================
+    主键：
+        -------------------------------------
+        列名：igorderid
+        列类型：VARCHAR
+        字段名：igorderid
+        注释：igorderid 积分订单ID
+        类型包名：java.lang
+        类型短名：String
+        类型全名：java.lang.String
+        是否主键：false
+        是否可空：false
+        是否为BLOB列：false
+        是否为String列：true
+        是否为字符串列：true
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：128
+        列精度：0
+
+    基础列：
+        -------------------------------------
+        列名：pid
+        列类型：VARCHAR
+        字段名：pid
+        注释：pid 产品ID
+        类型包名：java.lang
+        类型短名：String
+        类型全名：java.lang.String
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：true
+        是否为字符串列：true
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：128
+        列精度：0
+        -------------------------------------
+        列名：pnum
+        列类型：INTEGER
+        字段名：pnum
+        注释：pnum 购买数量
+        类型包名：java.lang
+        类型短名：Integer
+        类型全名：java.lang.Integer
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：false
+        是否为字符串列：false
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：10
+        列精度：0
+        -------------------------------------
+        列名：receivername
+        列类型：VARCHAR
+        字段名：receivername
+        注释：receivername 收货人
+        类型包名：java.lang
+        类型短名：String
+        类型全名：java.lang.String
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：true
+        是否为字符串列：true
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：32
+        列精度：0
+        -------------------------------------
+        列名：receiveraddress
+        列类型：VARCHAR
+        字段名：receiveraddress
+        注释：receiveraddress 收货人地址
+        类型包名：java.lang
+        类型短名：String
+        类型全名：java.lang.String
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：true
+        是否为字符串列：true
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：32
+        列精度：0
+        -------------------------------------
+        列名：receiverphone
+        列类型：VARCHAR
+        字段名：receiverphone
+        注释：receiverphone 联系电话
+        类型包名：java.lang
+        类型短名：String
+        类型全名：java.lang.String
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：true
+        是否为字符串列：true
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：32
+        列精度：0
+        -------------------------------------
+        列名：receiverid
+        列类型：VARCHAR
+        字段名：receiverid
+        注释：receiverid 下单用户id
+        类型包名：java.lang
+        类型短名：String
+        类型全名：java.lang.String
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：true
+        是否为字符串列：true
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：128
+        列精度：0
+        -------------------------------------
+        列名：delivery
+        列类型：INTEGER
+        字段名：delivery
+        注释：delivery 订单状态0为未发货，1为已发货，2为已收货
+        类型包名：java.lang
+        类型短名：Integer
+        类型全名：java.lang.Integer
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：false
+        是否为字符串列：false
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：10
+        列精度：0
+
+    Blob列：
+=====================================
+全部列：
+    列名 - 字段名
+        igorderid - igorderid
+        pid - pid
+        pnum - pnum
+        receivername - receivername
+        receiveraddress - receiveraddress
+        receiverphone - receiverphone
+        receiverid - receiverid
+        delivery - delivery
+****************************************************************************************
+实体和表的信息：
+表名：code
+变量名：code
+小写名：code
+类名：Code
+全名：net.seehope.hxfenxiao.pojo.Code
+包名：net.seehope.hxfenxiao.pojo
+
+列的信息：
+=====================================
+    主键：
+
+    基础列：
+        -------------------------------------
+        列名：packcode
+        列类型：VARCHAR
+        字段名：packcode
+        注释：包装码
+        类型包名：java.lang
+        类型短名：String
+        类型全名：java.lang.String
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：true
+        是否为字符串列：true
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：32
+        列精度：0
+        -------------------------------------
+        列名：productcode
+        列类型：VARCHAR
+        字段名：productcode
+        注释：小码
+        类型包名：java.lang
+        类型短名：String
+        类型全名：java.lang.String
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：true
+        是否为字符串列：true
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：32
+        列精度：0
+        -------------------------------------
+        列名：pid
+        列类型：VARCHAR
+        字段名：pid
+        注释：产品id
+        类型包名：java.lang
+        类型短名：String
+        类型全名：java.lang.String
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：true
+        是否为字符串列：true
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：32
+        列精度：0
+        -------------------------------------
+        列名：status
+        列类型：INTEGER
+        字段名：status
+        注释：领取积分状态 1未领取 0领取
+        类型包名：java.lang
+        类型短名：Integer
+        类型全名：java.lang.Integer
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：false
+        是否为字符串列：false
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：10
+        列精度：0
+        -------------------------------------
+        列名：did
+        列类型：VARCHAR
+        字段名：did
+        注释：所归属经销商
+        类型包名：java.lang
+        类型短名：String
+        类型全名：java.lang.String
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：true
+        是否为字符串列：true
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：32
+        列精度：0
+
+    Blob列：
+=====================================
+全部列：
+    列名 - 字段名
+        packcode - packcode
+        productcode - productcode
+        pid - pid
+        status - status
+        did - did
+****************************************************************************************
+实体和表的信息：
+表名：order
+变量名：order
+小写名：order
+类名：Order
+全名：net.seehope.hxfenxiao.pojo.Order
+包名：net.seehope.hxfenxiao.pojo
+
+列的信息：
+=====================================
+    主键：
+
+    基础列：
+        -------------------------------------
+        列名：orderid
+        列类型：VARCHAR
+        字段名：orderid
+        注释：订单号
+        类型包名：java.lang
+        类型短名：String
+        类型全名：java.lang.String
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：true
+        是否为字符串列：true
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：32
+        列精度：0
+        -------------------------------------
+        列名：pid
+        列类型：VARCHAR
+        字段名：pid
+        注释：购买产品id
+        类型包名：java.lang
+        类型短名：String
+        类型全名：java.lang.String
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：true
+        是否为字符串列：true
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：32
+        列精度：0
+        -------------------------------------
+        列名：pnum
+        列类型：INTEGER
+        字段名：pnum
+        注释：购买数量
+        类型包名：java.lang
+        类型短名：Integer
+        类型全名：java.lang.Integer
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：false
+        是否为字符串列：false
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：10
+        列精度：0
+        -------------------------------------
+        列名：receivername
+        列类型：VARCHAR
+        字段名：receivername
+        注释：收货人
+        类型包名：java.lang
+        类型短名：String
+        类型全名：java.lang.String
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：true
+        是否为字符串列：true
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：32
+        列精度：0
+        -------------------------------------
+        列名：receiveraddress
+        列类型：VARCHAR
+        字段名：receiveraddress
+        注释：收货地址
+        类型包名：java.lang
+        类型短名：String
+        类型全名：java.lang.String
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：true
+        是否为字符串列：true
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：32
+        列精度：0
+        -------------------------------------
+        列名：receiverphone
+        列类型：VARCHAR
+        字段名：receiverphone
+        注释：联系电话
+        类型包名：java.lang
+        类型短名：String
+        类型全名：java.lang.String
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：true
+        是否为字符串列：true
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：32
+        列精度：0
+        -------------------------------------
+        列名：receiverid
+        列类型：VARCHAR
+        字段名：receiverid
+        注释：下单经销商ID
+        类型包名：java.lang
+        类型短名：String
+        类型全名：java.lang.String
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：true
+        是否为字符串列：true
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：32
+        列精度：0
+        -------------------------------------
+        列名：delivery
+        列类型：INTEGER
+        字段名：delivery
+        注释：状态订单
+        类型包名：java.lang
+        类型短名：Integer
+        类型全名：java.lang.Integer
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：false
+        是否为字符串列：false
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：10
+        列精度：0
+        -------------------------------------
+        列名：sendid
+        列类型：VARCHAR
+        字段名：sendid
+        注释：发货经销商ID
+        类型包名：java.lang
+        类型短名：String
+        类型全名：java.lang.String
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：true
+        是否为字符串列：true
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：32
+        列精度：0
+        -------------------------------------
+        列名：orederdate
+        列类型：TIMESTAMP
+        字段名：orederdate
+        注释：下单时间
+        类型包名：java.util
+        类型短名：Date
+        类型全名：java.util.Date
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：false
+        是否为字符串列：false
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：19
+        列精度：0
+
+    Blob列：
+=====================================
+全部列：
+    列名 - 字段名
+        orderid - orderid
+        pid - pid
+        pnum - pnum
+        receivername - receivername
+        receiveraddress - receiveraddress
+        receiverphone - receiverphone
+        receiverid - receiverid
+        delivery - delivery
+        sendid - sendid
+        orederdate - orederdate
+****************************************************************************************
+实体和表的信息：
+表名：user
+变量名：user
+小写名：user
+类名：User
+全名：net.seehope.hxfenxiao.pojo.User
+包名：net.seehope.hxfenxiao.pojo
+
+列的信息：
+=====================================
+    主键：
+        -------------------------------------
+        列名：userid
+        列类型：VARCHAR
+        字段名：userid
+        注释：userid 用户id
+        类型包名：java.lang
+        类型短名：String
+        类型全名：java.lang.String
+        是否主键：false
+        是否可空：false
+        是否为BLOB列：false
+        是否为String列：true
+        是否为字符串列：true
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：128
+        列精度：0
+
+    基础列：
+        -------------------------------------
+        列名：uusername
+        列类型：VARCHAR
+        字段名：uusername
+        注释：uusername 账号
+        类型包名：java.lang
+        类型短名：String
+        类型全名：java.lang.String
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：true
+        是否为字符串列：true
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：32
+        列精度：0
+        -------------------------------------
+        列名：upassword
+        列类型：VARCHAR
+        字段名：upassword
+        注释：upassword 密码
+        类型包名：java.lang
+        类型短名：String
+        类型全名：java.lang.String
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：true
+        是否为字符串列：true
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：128
+        列精度：0
+        -------------------------------------
+        列名：uintegral
+        列类型：INTEGER
+        字段名：uintegral
+        注释：uintegral 积分
+        类型包名：java.lang
+        类型短名：Integer
+        类型全名：java.lang.Integer
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：false
+        是否为字符串列：false
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：10
+        列精度：0
+        -------------------------------------
+        列名：uphoneNum
+        列类型：VARCHAR
+        字段名：uphonenum
+        注释：uphoneNum 手机号码
+        类型包名：java.lang
+        类型短名：String
+        类型全名：java.lang.String
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：true
+        是否为字符串列：true
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：32
+        列精度：0
+        -------------------------------------
+        列名：uemail
+        列类型：VARCHAR
+        字段名：uemail
+        注释：uemail 邮箱
+        类型包名：java.lang
+        类型短名：String
+        类型全名：java.lang.String
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：true
+        是否为字符串列：true
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：32
+        列精度：0
+        -------------------------------------
+        列名：usex
+        列类型：CHAR
+        字段名：usex
+        注释：usex 性别
+        类型包名：java.lang
+        类型短名：String
+        类型全名：java.lang.String
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：true
+        是否为字符串列：true
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：1
+        列精度：0
+        -------------------------------------
+        列名：ustatus
+        列类型：INTEGER
+        字段名：ustatus
+        注释：ustatus 状态0 未开启 1 开启
+        类型包名：java.lang
+        类型短名：Integer
+        类型全名：java.lang.Integer
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：false
+        是否为字符串列：false
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：10
+        列精度：0
+
+    Blob列：
+=====================================
+全部列：
+    列名 - 字段名
+        userid - userid
+        uusername - uusername
+        upassword - upassword
+        uintegral - uintegral
+        uphoneNum - uphonenum
+        uemail - uemail
+        usex - usex
+        ustatus - ustatus
+****************************************************************************************
+实体和表的信息：
+表名：stock
+变量名：stock
+小写名：stock
+类名：Stock
+全名：net.seehope.hxfenxiao.pojo.Stock
+包名：net.seehope.hxfenxiao.pojo
+
+列的信息：
+=====================================
+    主键：
+
+    基础列：
+        -------------------------------------
+        列名：did
+        列类型：VARCHAR
+        字段名：did
+        注释：did 经销商id
+        类型包名：java.lang
+        类型短名：String
+        类型全名：java.lang.String
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：true
+        是否为字符串列：true
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：32
+        列精度：0
+        -------------------------------------
+        列名：pname
+        列类型：VARCHAR
+        字段名：pname
+        注释：pname 库存产品名
+        类型包名：java.lang
+        类型短名：String
+        类型全名：java.lang.String
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：true
+        是否为字符串列：true
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：32
+        列精度：0
+        -------------------------------------
+        列名：pnum
+        列类型：INTEGER
+        字段名：pnum
+        注释：pnum 库存产品数量
+        类型包名：java.lang
+        类型短名：Integer
+        类型全名：java.lang.Integer
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：false
+        是否为字符串列：false
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：10
+        列精度：0
+
+    Blob列：
+=====================================
+全部列：
+    列名 - 字段名
+        did - did
+        pname - pname
+        pnum - pnum
+****************************************************************************************
+实体和表的信息：
+表名：admin
+变量名：admin
+小写名：admin
+类名：Admin
+全名：net.seehope.hxfenxiao.pojo.Admin
+包名：net.seehope.hxfenxiao.pojo
+
+列的信息：
+=====================================
+    主键：
+        -------------------------------------
+        列名：adminid
+        列类型：VARCHAR
+        字段名：adminid
+        注释：adminid 用户ID
+        类型包名：java.lang
+        类型短名：String
+        类型全名：java.lang.String
+        是否主键：false
+        是否可空：false
+        是否为BLOB列：false
+        是否为String列：true
+        是否为字符串列：true
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：32
+        列精度：0
+
+    基础列：
+        -------------------------------------
+        列名：ausername
+        列类型：VARCHAR
+        字段名：ausername
+        注释：ausername 账号
+        类型包名：java.lang
+        类型短名：String
+        类型全名：java.lang.String
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：true
+        是否为字符串列：true
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：32
+        列精度：0
+        -------------------------------------
+        列名：apassword
+        列类型：VARCHAR
+        字段名：apassword
+        注释：apassword 密码
+        类型包名：java.lang
+        类型短名：String
+        类型全名：java.lang.String
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：true
+        是否为字符串列：true
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：128
+        列精度：0
+        -------------------------------------
+        列名：aphoneNum
+        列类型：VARCHAR
+        字段名：aphonenum
+        注释：aphoneNum 电话
+        类型包名：java.lang
+        类型短名：String
+        类型全名：java.lang.String
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：true
+        是否为字符串列：true
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：32
+        列精度：0
+        -------------------------------------
+        列名：aemail
+        列类型：VARCHAR
+        字段名：aemail
+        注释：aemail 邮箱
+        类型包名：java.lang
+        类型短名：String
+        类型全名：java.lang.String
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：true
+        是否为字符串列：true
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：32
+        列精度：0
+        -------------------------------------
+        列名：astatus
+        列类型：INTEGER
+        字段名：astatus
+        注释：astatus 状态0 未开启 1 开启
+        类型包名：java.lang
+        类型短名：Integer
+        类型全名：java.lang.Integer
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：false
+        是否为字符串列：false
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：10
+        列精度：0
+
+    Blob列：
+=====================================
+全部列：
+    列名 - 字段名
+        adminid - adminid
+        ausername - ausername
+        apassword - apassword
+        aphoneNum - aphonenum
+        aemail - aemail
+        astatus - astatus
+****************************************************************************************
+实体和表的信息：
+表名：product
+变量名：product
+小写名：product
+类名：Product
+全名：net.seehope.hxfenxiao.pojo.Product
+包名：net.seehope.hxfenxiao.pojo
+
+列的信息：
+=====================================
+    主键：
+
+    基础列：
+        -------------------------------------
+        列名：productid
+        列类型：VARCHAR
+        字段名：productid
+        注释：productid 产品id
+        类型包名：java.lang
+        类型短名：String
+        类型全名：java.lang.String
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：true
+        是否为字符串列：true
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：32
+        列精度：0
+        -------------------------------------
+        列名：productname
+        列类型：VARCHAR
+        字段名：productname
+        注释：productname 产品名
+        类型包名：java.lang
+        类型短名：String
+        类型全名：java.lang.String
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：true
+        是否为字符串列：true
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：32
+        列精度：0
+        -------------------------------------
+        列名：productprice1
+        列类型：DECIMAL
+        字段名：productprice1
+        注释：productprice1 1级价格
+        类型包名：java.math
+        类型短名：BigDecimal
+        类型全名：java.math.BigDecimal
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：false
+        是否为字符串列：false
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：32
+        列精度：8
+        -------------------------------------
+        列名：productprice2
+        列类型：DECIMAL
+        字段名：productprice2
+        注释：productprice2 2级价格
+        类型包名：java.math
+        类型短名：BigDecimal
+        类型全名：java.math.BigDecimal
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：false
+        是否为字符串列：false
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：32
+        列精度：8
+        -------------------------------------
+        列名：productprice3
+        列类型：DECIMAL
+        字段名：productprice3
+        注释：productprice3 3级价格
+        类型包名：java.math
+        类型短名：BigDecimal
+        类型全名：java.math.BigDecimal
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：false
+        是否为字符串列：false
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：32
+        列精度：8
+        -------------------------------------
+        列名：productscore
+        列类型：INTEGER
+        字段名：productscore
+        注释：productscore 产品积分
+        类型包名：java.lang
+        类型短名：Integer
+        类型全名：java.lang.Integer
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：false
+        是否为字符串列：false
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：10
+        列精度：0
+        -------------------------------------
+        列名：productchangescore
+        列类型：INTEGER
+        字段名：productchangescore
+        注释：productchangescore 兑换积分
+        类型包名：java.lang
+        类型短名：Integer
+        类型全名：java.lang.Integer
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：false
+        是否为字符串列：false
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：10
+        列精度：0
+        -------------------------------------
+        列名：productimage
+        列类型：TIMESTAMP
+        字段名：productimage
+        注释：产品图片
+        类型包名：java.util
+        类型短名：Date
+        类型全名：java.util.Date
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：false
+        是否为字符串列：false
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：19
+        列精度：0
+        -------------------------------------
+        列名：productdate
+        列类型：VARCHAR
+        字段名：productdate
+        注释：产品上架时间
+        类型包名：java.lang
+        类型短名：String
+        类型全名：java.lang.String
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：true
+        是否为字符串列：true
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：32
+        列精度：0
+        -------------------------------------
+        列名：productdesc
+        列类型：VARCHAR
+        字段名：productdesc
+        注释：产品描述
+        类型包名：java.lang
+        类型短名：String
+        类型全名：java.lang.String
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：true
+        是否为字符串列：true
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：100
+        列精度：0
+        -------------------------------------
+        列名：productsale
+        列类型：INTEGER
+        字段名：productsale
+        注释：产品销量
+        类型包名：java.lang
+        类型短名：Integer
+        类型全名：java.lang.Integer
+        是否主键：false
+        是否可空：true
+        是否为BLOB列：false
+        是否为String列：false
+        是否为字符串列：false
+        是否为日期列：false
+        是否为时间列：false
+        是否为序列列：false
+        列长度：10
+        列精度：0
+
+    Blob列：
+=====================================
+全部列：
+    列名 - 字段名
+        productid - productid
+        productname - productname
+        productprice1 - productprice1
+        productprice2 - productprice2
+        productprice3 - productprice3
+        productscore - productscore
+        productchangescore - productchangescore
+        productimage - productimage
+        productdate - productdate
+        productdesc - productdesc
+        productsale - productsale

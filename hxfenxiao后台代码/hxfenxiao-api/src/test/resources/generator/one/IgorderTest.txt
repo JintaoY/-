@@ -1,0 +1,185 @@
+目标package: generator.one
+
+当前时间：
+2019-12-11
+10:43:28
+2019-12-11 10:43:28
+
+所有配置的属性信息:
+targetPackage - generator.one
+templateFormatter - tk.mybatis.mapper.generator.formatter.FreemarkerTemplateFormatter
+templatePath - generator/test-one.ftl
+targetProject - ../hxfenxiao-api/src/test/resources
+fileName - ${tableClass.shortClassName}Test.txt
+
+实体和表的信息：
+表名：igorder
+变量名：igorder
+小写名：igorder
+类名：Igorder
+全名：net.seehope.hxfenxiao.pojo.Igorder
+包名：net.seehope.hxfenxiao.pojo
+
+列的信息：
+=====================================
+主键：
+    -------------------------------------
+    列名：igorderid
+    列类型：VARCHAR
+    字段名：igorderid
+    注释：igorderid 积分订单ID
+    类型包名：java.lang
+    类型短名：String
+    类型全名：java.lang.String
+    是否主键：false
+    是否可空：false
+    是否为BLOB列：false
+    是否为String列：true
+    是否为字符串列：true
+    是否为日期列：false
+    是否为时间列：false
+    是否为序列列：false
+    列长度：128
+    列精度：0
+
+基础列：
+    -------------------------------------
+    列名：pid
+    列类型：VARCHAR
+    字段名：pid
+    注释：pid 产品ID
+    类型包名：java.lang
+    类型短名：String
+    类型全名：java.lang.String
+    是否主键：false
+    是否可空：true
+    是否为BLOB列：false
+    是否为String列：true
+    是否为字符串列：true
+    是否为日期列：false
+    是否为时间列：false
+    是否为序列列：false
+    列长度：128
+    列精度：0
+    -------------------------------------
+    列名：pnum
+    列类型：INTEGER
+    字段名：pnum
+    注释：pnum 购买数量
+    类型包名：java.lang
+    类型短名：Integer
+    类型全名：java.lang.Integer
+    是否主键：false
+    是否可空：true
+    是否为BLOB列：false
+    是否为String列：false
+    是否为字符串列：false
+    是否为日期列：false
+    是否为时间列：false
+    是否为序列列：false
+    列长度：10
+    列精度：0
+    -------------------------------------
+    列名：receivername
+    列类型：VARCHAR
+    字段名：receivername
+    注释：receivername 收货人
+    类型包名：java.lang
+    类型短名：String
+    类型全名：java.lang.String
+    是否主键：false
+    是否可空：true
+    是否为BLOB列：false
+    是否为String列：true
+    是否为字符串列：true
+    是否为日期列：false
+    是否为时间列：false
+    是否为序列列：false
+    列长度：32
+    列精度：0
+    -------------------------------------
+    列名：receiveraddress
+    列类型：VARCHAR
+    字段名：receiveraddress
+    注释：receiveraddress 收货人地址
+    类型包名：java.lang
+    类型短名：String
+    类型全名：java.lang.String
+    是否主键：false
+    是否可空：true
+    是否为BLOB列：false
+    是否为String列：true
+    是否为字符串列：true
+    是否为日期列：false
+    是否为时间列：false
+    是否为序列列：false
+    列长度：32
+    列精度：0
+    -------------------------------------
+    列名：receiverphone
+    列类型：VARCHAR
+    字段名：receiverphone
+    注释：receiverphone 联系电话
+    类型包名：java.lang
+    类型短名：String
+    类型全名：java.lang.String
+    是否主键：false
+    是否可空：true
+    是否为BLOB列：false
+    是否为String列：true
+    是否为字符串列：true
+    是否为日期列：false
+    是否为时间列：false
+    是否为序列列：false
+    列长度：32
+    列精度：0
+    -------------------------------------
+    列名：receiverid
+    列类型：VARCHAR
+    字段名：receiverid
+    注释：receiverid 下单用户id
+    类型包名：java.lang
+    类型短名：String
+    类型全名：java.lang.String
+    是否主键：false
+    是否可空：true
+    是否为BLOB列：false
+    是否为String列：true
+    是否为字符串列：true
+    是否为日期列：false
+    是否为时间列：false
+    是否为序列列：false
+    列长度：128
+    列精度：0
+    -------------------------------------
+    列名：delivery
+    列类型：INTEGER
+    字段名：delivery
+    注释：delivery 订单状态0为未发货，1为已发货，2为已收货
+    类型包名：java.lang
+    类型短名：Integer
+    类型全名：java.lang.Integer
+    是否主键：false
+    是否可空：true
+    是否为BLOB列：false
+    是否为String列：false
+    是否为字符串列：false
+    是否为日期列：false
+    是否为时间列：false
+    是否为序列列：false
+    列长度：10
+    列精度：0
+
+Blob列：
+
+=====================================
+全部列：
+列名 - 字段名
+    igorderid - igorderid
+    pid - pid
+    pnum - pnum
+    receivername - receivername
+    receiveraddress - receiveraddress
+    receiverphone - receiverphone
+    receiverid - receiverid
+    delivery - delivery

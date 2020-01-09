@@ -1,0 +1,185 @@
+目标package: generator.one
+
+当前时间：
+2019-12-11
+10:43:28
+2019-12-11 10:43:28
+
+所有配置的属性信息:
+targetPackage - generator.one
+templateFormatter - tk.mybatis.mapper.generator.formatter.FreemarkerTemplateFormatter
+templatePath - generator/test-one.ftl
+targetProject - ../hxfenxiao-api/src/test/resources
+fileName - ${tableClass.shortClassName}Test.txt
+
+实体和表的信息：
+表名：distributor
+变量名：distributor
+小写名：distributor
+类名：Distributor
+全名：net.seehope.hxfenxiao.pojo.Distributor
+包名：net.seehope.hxfenxiao.pojo
+
+列的信息：
+=====================================
+主键：
+    -------------------------------------
+    列名：did
+    列类型：VARCHAR
+    字段名：did
+    注释：did 经销商ID,格式为1,  1.1  1.1.1
+    类型包名：java.lang
+    类型短名：String
+    类型全名：java.lang.String
+    是否主键：false
+    是否可空：false
+    是否为BLOB列：false
+    是否为String列：true
+    是否为字符串列：true
+    是否为日期列：false
+    是否为时间列：false
+    是否为序列列：false
+    列长度：32
+    列精度：0
+
+基础列：
+    -------------------------------------
+    列名：dphoneNum
+    列类型：VARCHAR
+    字段名：dphonenum
+    注释：dphoneNum 手机号码
+    类型包名：java.lang
+    类型短名：String
+    类型全名：java.lang.String
+    是否主键：false
+    是否可空：true
+    是否为BLOB列：false
+    是否为String列：true
+    是否为字符串列：true
+    是否为日期列：false
+    是否为时间列：false
+    是否为序列列：false
+    列长度：128
+    列精度：0
+    -------------------------------------
+    列名：dname
+    列类型：VARCHAR
+    字段名：dname
+    注释：dname 经销商姓名
+    类型包名：java.lang
+    类型短名：String
+    类型全名：java.lang.String
+    是否主键：false
+    是否可空：true
+    是否为BLOB列：false
+    是否为String列：true
+    是否为字符串列：true
+    是否为日期列：false
+    是否为时间列：false
+    是否为序列列：false
+    列长度：32
+    列精度：0
+    -------------------------------------
+    列名：dsex
+    列类型：CHAR
+    字段名：dsex
+    注释：dsex 经销商性别
+    类型包名：java.lang
+    类型短名：String
+    类型全名：java.lang.String
+    是否主键：false
+    是否可空：true
+    是否为BLOB列：false
+    是否为String列：true
+    是否为字符串列：true
+    是否为日期列：false
+    是否为时间列：false
+    是否为序列列：false
+    列长度：1
+    列精度：0
+    -------------------------------------
+    列名：demail
+    列类型：VARCHAR
+    字段名：demail
+    注释：demail 经销商邮箱
+    类型包名：java.lang
+    类型短名：String
+    类型全名：java.lang.String
+    是否主键：false
+    是否可空：true
+    是否为BLOB列：false
+    是否为String列：true
+    是否为字符串列：true
+    是否为日期列：false
+    是否为时间列：false
+    是否为序列列：false
+    列长度：32
+    列精度：0
+    -------------------------------------
+    列名：dstatus
+    列类型：INTEGER
+    字段名：dstatus
+    注释：dstatus 经销商状态0 未开启 1 开启
+    类型包名：java.lang
+    类型短名：Integer
+    类型全名：java.lang.Integer
+    是否主键：false
+    是否可空：true
+    是否为BLOB列：false
+    是否为String列：false
+    是否为字符串列：false
+    是否为日期列：false
+    是否为时间列：false
+    是否为序列列：false
+    列长度：10
+    列精度：0
+    -------------------------------------
+    列名：dintegral
+    列类型：INTEGER
+    字段名：dintegral
+    注释：dintegral 经销商的积分，当被投诉被扣除积分
+    类型包名：java.lang
+    类型短名：Integer
+    类型全名：java.lang.Integer
+    是否主键：false
+    是否可空：true
+    是否为BLOB列：false
+    是否为String列：false
+    是否为字符串列：false
+    是否为日期列：false
+    是否为时间列：false
+    是否为序列列：false
+    列长度：10
+    列精度：0
+    -------------------------------------
+    列名：hid
+    列类型：VARCHAR
+    字段名：hid
+    注释：hid 上级经销商did
+    类型包名：java.lang
+    类型短名：String
+    类型全名：java.lang.String
+    是否主键：false
+    是否可空：true
+    是否为BLOB列：false
+    是否为String列：true
+    是否为字符串列：true
+    是否为日期列：false
+    是否为时间列：false
+    是否为序列列：false
+    列长度：32
+    列精度：0
+
+Blob列：
+
+=====================================
+全部列：
+列名 - 字段名
+    did - did
+    dphoneNum - dphonenum
+    dname - dname
+    dsex - dsex
+    demail - demail
+    dstatus - dstatus
+    dintegral - dintegral
+    hid - hid

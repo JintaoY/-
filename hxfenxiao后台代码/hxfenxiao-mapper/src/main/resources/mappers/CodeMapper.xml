@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="net.seehope.hxfenxiao.mapper.CodeMapper">
+	 <insert id="insertIntoCodes" parameterType="java.util.ArrayList">
+        insert into `code`(packcode,productcode,pid,did) values
+        <foreach collection="list" index="index" separator="," item="item">
+            (#{item.packcode},#{item.productcode},#{item.pid},#{item.did})
+        </foreach>
+    </insert>
+    <update id="updateByPackcode">
+    	update code 
+    	set did=#{id}
+    	where packcode=#{packcode} 
+    </update>
+</mapper>

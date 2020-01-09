@@ -1,0 +1,128 @@
+目标package: generator.one
+
+当前时间：
+2019-12-11
+10:43:28
+2019-12-11 10:43:28
+
+所有配置的属性信息:
+targetPackage - generator.one
+templateFormatter - tk.mybatis.mapper.generator.formatter.FreemarkerTemplateFormatter
+templatePath - generator/test-one.ftl
+targetProject - ../hxfenxiao-api/src/test/resources
+fileName - ${tableClass.shortClassName}Test.txt
+
+实体和表的信息：
+表名：code
+变量名：code
+小写名：code
+类名：Code
+全名：net.seehope.hxfenxiao.pojo.Code
+包名：net.seehope.hxfenxiao.pojo
+
+列的信息：
+=====================================
+主键：
+
+基础列：
+    -------------------------------------
+    列名：packcode
+    列类型：VARCHAR
+    字段名：packcode
+    注释：包装码
+    类型包名：java.lang
+    类型短名：String
+    类型全名：java.lang.String
+    是否主键：false
+    是否可空：true
+    是否为BLOB列：false
+    是否为String列：true
+    是否为字符串列：true
+    是否为日期列：false
+    是否为时间列：false
+    是否为序列列：false
+    列长度：32
+    列精度：0
+    -------------------------------------
+    列名：productcode
+    列类型：VARCHAR
+    字段名：productcode
+    注释：小码
+    类型包名：java.lang
+    类型短名：String
+    类型全名：java.lang.String
+    是否主键：false
+    是否可空：true
+    是否为BLOB列：false
+    是否为String列：true
+    是否为字符串列：true
+    是否为日期列：false
+    是否为时间列：false
+    是否为序列列：false
+    列长度：32
+    列精度：0
+    -------------------------------------
+    列名：pid
+    列类型：VARCHAR
+    字段名：pid
+    注释：产品id
+    类型包名：java.lang
+    类型短名：String
+    类型全名：java.lang.String
+    是否主键：false
+    是否可空：true
+    是否为BLOB列：false
+    是否为String列：true
+    是否为字符串列：true
+    是否为日期列：false
+    是否为时间列：false
+    是否为序列列：false
+    列长度：32
+    列精度：0
+    -------------------------------------
+    列名：status
+    列类型：INTEGER
+    字段名：status
+    注释：领取积分状态 1未领取 0领取
+    类型包名：java.lang
+    类型短名：Integer
+    类型全名：java.lang.Integer
+    是否主键：false
+    是否可空：true
+    是否为BLOB列：false
+    是否为String列：false
+    是否为字符串列：false
+    是否为日期列：false
+    是否为时间列：false
+    是否为序列列：false
+    列长度：10
+    列精度：0
+    -------------------------------------
+    列名：did
+    列类型：VARCHAR
+    字段名：did
+    注释：所归属经销商
+    类型包名：java.lang
+    类型短名：String
+    类型全名：java.lang.String
+    是否主键：false
+    是否可空：true
+    是否为BLOB列：false
+    是否为String列：true
+    是否为字符串列：true
+    是否为日期列：false
+    是否为时间列：false
+    是否为序列列：false
+    列长度：32
+    列精度：0
+
+Blob列：
+
+=====================================
+全部列：
+列名 - 字段名
+    packcode - packcode
+    productcode - productcode
+    pid - pid
+    status - status
+    did - did

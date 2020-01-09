@@ -1,0 +1,128 @@
+目标package: generator.one
+
+当前时间：
+2019-12-11
+10:43:28
+2019-12-11 10:43:28
+
+所有配置的属性信息:
+targetPackage - generator.one
+templateFormatter - tk.mybatis.mapper.generator.formatter.FreemarkerTemplateFormatter
+templatePath - generator/test-one.ftl
+targetProject - ../hxfenxiao-api/src/test/resources
+fileName - ${tableClass.shortClassName}Test.txt
+
+实体和表的信息：
+表名：complaint
+变量名：complaint
+小写名：complaint
+类名：Complaint
+全名：net.seehope.hxfenxiao.pojo.Complaint
+包名：net.seehope.hxfenxiao.pojo
+
+列的信息：
+=====================================
+主键：
+    -------------------------------------
+    列名：cid
+    列类型：VARCHAR
+    字段名：cid
+    注释：cid 投诉ID
+    类型包名：java.lang
+    类型短名：String
+    类型全名：java.lang.String
+    是否主键：false
+    是否可空：false
+    是否为BLOB列：false
+    是否为String列：true
+    是否为字符串列：true
+    是否为日期列：false
+    是否为时间列：false
+    是否为序列列：false
+    列长度：128
+    列精度：0
+
+基础列：
+    -------------------------------------
+    列名：userid
+    列类型：VARCHAR
+    字段名：userid
+    注释：userid 用户ID
+    类型包名：java.lang
+    类型短名：String
+    类型全名：java.lang.String
+    是否主键：false
+    是否可空：true
+    是否为BLOB列：false
+    是否为String列：true
+    是否为字符串列：true
+    是否为日期列：false
+    是否为时间列：false
+    是否为序列列：false
+    列长度：128
+    列精度：0
+    -------------------------------------
+    列名：did
+    列类型：VARCHAR
+    字段名：did
+    注释：did 经销商ID
+    类型包名：java.lang
+    类型短名：String
+    类型全名：java.lang.String
+    是否主键：false
+    是否可空：true
+    是否为BLOB列：false
+    是否为String列：true
+    是否为字符串列：true
+    是否为日期列：false
+    是否为时间列：false
+    是否为序列列：false
+    列长度：128
+    列精度：0
+    -------------------------------------
+    列名：content
+    列类型：VARCHAR
+    字段名：content
+    注释：content 投诉内容
+    类型包名：java.lang
+    类型短名：String
+    类型全名：java.lang.String
+    是否主键：false
+    是否可空：true
+    是否为BLOB列：false
+    是否为String列：true
+    是否为字符串列：true
+    是否为日期列：false
+    是否为时间列：false
+    是否为序列列：false
+    列长度：128
+    列精度：0
+    -------------------------------------
+    列名：cstatus
+    列类型：INTEGER
+    字段名：cstatus
+    注释：cstatus 处理状态 0未处理 1已处理
+    类型包名：java.lang
+    类型短名：Integer
+    类型全名：java.lang.Integer
+    是否主键：false
+    是否可空：true
+    是否为BLOB列：false
+    是否为String列：false
+    是否为字符串列：false
+    是否为日期列：false
+    是否为时间列：false
+    是否为序列列：false
+    列长度：10
+    列精度：0
+
+Blob列：
+
+=====================================
+全部列：
+列名 - 字段名
+    cid - cid
+    userid - userid
+    did - did
+    content - content
+    cstatus - cstatus

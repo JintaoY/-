@@ -1,0 +1,242 @@
+目标package: generator.one
+
+当前时间：
+2019-12-11
+10:43:28
+2019-12-11 10:43:28
+
+所有配置的属性信息:
+targetPackage - generator.one
+templateFormatter - tk.mybatis.mapper.generator.formatter.FreemarkerTemplateFormatter
+templatePath - generator/test-one.ftl
+targetProject - ../hxfenxiao-api/src/test/resources
+fileName - ${tableClass.shortClassName}Test.txt
+
+实体和表的信息：
+表名：product
+变量名：product
+小写名：product
+类名：Product
+全名：net.seehope.hxfenxiao.pojo.Product
+包名：net.seehope.hxfenxiao.pojo
+
+列的信息：
+=====================================
+主键：
+
+基础列：
+    -------------------------------------
+    列名：productid
+    列类型：VARCHAR
+    字段名：productid
+    注释：productid 产品id
+    类型包名：java.lang
+    类型短名：String
+    类型全名：java.lang.String
+    是否主键：false
+    是否可空：true
+    是否为BLOB列：false
+    是否为String列：true
+    是否为字符串列：true
+    是否为日期列：false
+    是否为时间列：false
+    是否为序列列：false
+    列长度：32
+    列精度：0
+    -------------------------------------
+    列名：productname
+    列类型：VARCHAR
+    字段名：productname
+    注释：productname 产品名
+    类型包名：java.lang
+    类型短名：String
+    类型全名：java.lang.String
+    是否主键：false
+    是否可空：true
+    是否为BLOB列：false
+    是否为String列：true
+    是否为字符串列：true
+    是否为日期列：false
+    是否为时间列：false
+    是否为序列列：false
+    列长度：32
+    列精度：0
+    -------------------------------------
+    列名：productprice1
+    列类型：DECIMAL
+    字段名：productprice1
+    注释：productprice1 1级价格
+    类型包名：java.math
+    类型短名：BigDecimal
+    类型全名：java.math.BigDecimal
+    是否主键：false
+    是否可空：true
+    是否为BLOB列：false
+    是否为String列：false
+    是否为字符串列：false
+    是否为日期列：false
+    是否为时间列：false
+    是否为序列列：false
+    列长度：32
+    列精度：8
+    -------------------------------------
+    列名：productprice2
+    列类型：DECIMAL
+    字段名：productprice2
+    注释：productprice2 2级价格
+    类型包名：java.math
+    类型短名：BigDecimal
+    类型全名：java.math.BigDecimal
+    是否主键：false
+    是否可空：true
+    是否为BLOB列：false
+    是否为String列：false
+    是否为字符串列：false
+    是否为日期列：false
+    是否为时间列：false
+    是否为序列列：false
+    列长度：32
+    列精度：8
+    -------------------------------------
+    列名：productprice3
+    列类型：DECIMAL
+    字段名：productprice3
+    注释：productprice3 3级价格
+    类型包名：java.math
+    类型短名：BigDecimal
+    类型全名：java.math.BigDecimal
+    是否主键：false
+    是否可空：true
+    是否为BLOB列：false
+    是否为String列：false
+    是否为字符串列：false
+    是否为日期列：false
+    是否为时间列：false
+    是否为序列列：false
+    列长度：32
+    列精度：8
+    -------------------------------------
+    列名：productscore
+    列类型：INTEGER
+    字段名：productscore
+    注释：productscore 产品积分
+    类型包名：java.lang
+    类型短名：Integer
+    类型全名：java.lang.Integer
+    是否主键：false
+    是否可空：true
+    是否为BLOB列：false
+    是否为String列：false
+    是否为字符串列：false
+    是否为日期列：false
+    是否为时间列：false
+    是否为序列列：false
+    列长度：10
+    列精度：0
+    -------------------------------------
+    列名：productchangescore
+    列类型：INTEGER
+    字段名：productchangescore
+    注释：productchangescore 兑换积分
+    类型包名：java.lang
+    类型短名：Integer
+    类型全名：java.lang.Integer
+    是否主键：false
+    是否可空：true
+    是否为BLOB列：false
+    是否为String列：false
+    是否为字符串列：false
+    是否为日期列：false
+    是否为时间列：false
+    是否为序列列：false
+    列长度：10
+    列精度：0
+    -------------------------------------
+    列名：productimage
+    列类型：TIMESTAMP
+    字段名：productimage
+    注释：产品图片
+    类型包名：java.util
+    类型短名：Date
+    类型全名：java.util.Date
+    是否主键：false
+    是否可空：true
+    是否为BLOB列：false
+    是否为String列：false
+    是否为字符串列：false
+    是否为日期列：false
+    是否为时间列：false
+    是否为序列列：false
+    列长度：19
+    列精度：0
+    -------------------------------------
+    列名：productdate
+    列类型：VARCHAR
+    字段名：productdate
+    注释：产品上架时间
+    类型包名：java.lang
+    类型短名：String
+    类型全名：java.lang.String
+    是否主键：false
+    是否可空：true
+    是否为BLOB列：false
+    是否为String列：true
+    是否为字符串列：true
+    是否为日期列：false
+    是否为时间列：false
+    是否为序列列：false
+    列长度：32
+    列精度：0
+    -------------------------------------
+    列名：productdesc
+    列类型：VARCHAR
+    字段名：productdesc
+    注释：产品描述
+    类型包名：java.lang
+    类型短名：String
+    类型全名：java.lang.String
+    是否主键：false
+    是否可空：true
+    是否为BLOB列：false
+    是否为String列：true
+    是否为字符串列：true
+    是否为日期列：false
+    是否为时间列：false
+    是否为序列列：false
+    列长度：100
+    列精度：0
+    -------------------------------------
+    列名：productsale
+    列类型：INTEGER
+    字段名：productsale
+    注释：产品销量
+    类型包名：java.lang
+    类型短名：Integer
+    类型全名：java.lang.Integer
+    是否主键：false
+    是否可空：true
+    是否为BLOB列：false
+    是否为String列：false
+    是否为字符串列：false
+    是否为日期列：false
+    是否为时间列：false
+    是否为序列列：false
+    列长度：10
+    列精度：0
+
+Blob列：
+
+=====================================
+全部列：
+列名 - 字段名
+    productid - productid
+    productname - productname
+    productprice1 - productprice1
+    productprice2 - productprice2
+    productprice3 - productprice3
+    productscore - productscore
+    productchangescore - productchangescore
+    productimage - productimage
+    productdate - productdate
+    productdesc - productdesc
+    productsale - productsale

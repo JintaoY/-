@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<!--[if lt IE 9]>
+<script type="text/javascript" src="lib/html5shiv.js"></script>
+<script type="text/javascript" src="lib/respond.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="static/h-ui/css/H-ui.min.css" />
+<link rel="stylesheet" type="text/css" href="static/h-ui.admin/css/H-ui.admin.css" />
+<link rel="stylesheet" type="text/css" href="lib/Hui-iconfont/1.0.8/iconfont.css" />
+<link rel="stylesheet" type="text/css" href="static/h-ui.admin/skin/default/skin.css" id="skin" />
+<link rel="stylesheet" type="text/css" href="static/h-ui.admin/css/style.css" />
+<!--[if IE 6]>
+<script type="text/javascript" src="lib/DD_belatedPNG_0.0.8a-min.js" ></script>
+<script>DD_belatedPNG.fix('*');</script>
+<![endif]-->
+<title>积分修改</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+</head>
+<body>
+<article class="page-container" id="app">
+	<form  class="form form-horizontal"  id="form-admin-add" >
+	<div class="row cl">
+		<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>产品ID：</label>
+		<div class="formControls col-xs-8 col-sm-9">
+			<input type="text" name="productid" id="" placeholder="" v-model="p.productid" class="input-text" readonly="readonly" hidden="hidden">
+			{{p.productid}}
+		</div>
+	</div>
+	<div class="row cl">
+		<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>产品图：</label>
+		<div class="formControls col-xs-8 col-sm-9">
+			<img :src="p.productimage" id="img1" width=160 height=180 />
+		</div>
+	</div>
+	<div class="row cl">
+		<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>产品名：</label>
+		<div class="formControls col-xs-8 col-sm-9">
+			{{p.productname}}
+		</div>
+	</div>
+	<div class="row cl">
+		<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>可获得积分：</label>
+		<div class="formControls col-xs-2 col-sm-2">
+			<input type="text" name="productscore" id="" placeholder="" v-model="p.productscore" class="input-text" >
+		</div>
+	</div>
+	<div class="row cl">
+		<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>兑换积分：</label>
+		<div class="formControls col-xs-2 col-sm-2">
+			<input type="text" name="productchangescore" id="" placeholder="" v-model="p.productchangescore" class="input-text" >
+		</div>
+	</div>
+	
+	<!-- <div class="row cl">
+		<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>上架时间：</label>
+		<div class="formControls col-xs-8 col-sm-9">
+			<p>XXXXX</p>
+		</div>
+	</div> -->
+	<div class="row cl">
+		<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>产品销量：</label>
+		<div class="formControls col-xs-8 col-sm-9">
+		{{p.productsale}}
+		</div>
+	</div>
+	
+	<div class="row cl">
+		<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
+			<input class="btn btn-primary radius" type="submit" value="  提交  ">
+		</div>
+	</div>
+	</form>
+</article>
+
+<!--_footer 作为公共模版分离出去--> 
+<script type="text/javascript" src="lib/jquery/1.9.1/jquery.min.js"></script> 
+<script type="text/javascript" src="lib/layer/2.4/layer.js"></script>
+<script type="text/javascript" src="static/h-ui/js/H-ui.min.js"></script> 
+<script type="text/javascript" src="static/h-ui.admin/js/H-ui.admin.js"></script> <!--/_footer 作为公共模版分离出去-->
+
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript" src="lib/jquery.validation/1.14.0/jquery.validate.js"></script> 
+<script type="text/javascript" src="lib/jquery.validation/1.14.0/validate-methods.js"></script> 
+<script type="text/javascript" src="lib/jquery.validation/1.14.0/messages_zh.js"></script> 
+<script type="text/javascript" src="lib/vue.min.js"></script>
+<script type="text/javascript" src="lib/axios-0.18.0.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('.skin-minimal input').iCheck({
+		checkboxClass: 'icheckbox-blue',
+		radioClass: 'iradio-blue',
+		increaseArea: '20%'
+	});
+	
+	$("#form-admin-add").validate({
+		rules:{
+			admin_productid:{
+				required:true,
+				minlength:4,
+				maxlength:16
+			},
+			admin_productname:{
+				required:true,
+			},
+			password2:{
+				required:true,
+			},
+			admin_productchangescore:{
+				required:true,
+			},
+			admin_productsale:{
+				required:true,
+			},
+			admin_productscore:{
+				required:true,
+			},
+			adminRole:{
+				required:true,
+			},
+		},
+		onkeyup:false,
+		focusCleanup:true,
+		success:"valid",
+		submitHandler:function(form){
+			$(form).ajaxSubmit({
+				type: 'post',
+				url: "/igorder/updateProductInteger" ,
+				success: function(data){
+					window.location.href="/integral-list.html";
+				},
+                error: function(XmlHttpRequest, textStatus, errorThrown){
+					layer.msg('error!',{icon:1,time:1000});
+				}
+			});
+			var index = parent.layer.getFrameIndex(window.name);
+			parent.$('.btn-refresh').click();
+			parent.layer.close(index);
+		}
+	});
+});
+
+new Vue({
+		 el:"#app",
+		 data:{
+				p:{}
+		},
+		 methods:{
+			findIntegralProduct:function(){
+				var _this=this;
+				axios.get('/igorder/findIntegralProduct')
+			         .then(function (response) {
+			        _this.p=response.data;
+			      console.log(response);
+			   })
+			    .catch(function (error) {
+			    console.log(error);
+			   })
+			}
+		 },
+		 created:function(){
+			 this.findIntegralProduct();
+		 }
+		
+	})
+</script> 
+<!--/请在上方写此页面业务相关的脚本-->
+</body>
+</html>

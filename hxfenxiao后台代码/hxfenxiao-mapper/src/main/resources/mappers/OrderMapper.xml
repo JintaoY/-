@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="net.seehope.hxfenxiao.mapper.OrderMapper">
+	<select id="getoneOrder" parameterType="java.lang.String" resultType="net.seehope.hxfenxiao.pojo.Order2">
+	SELECT orders.*,product.productname
+	FROM orders,product
+	WHERE orders.pid=product.productid AND orders.orderid=#{orderid}
+	</select>
+	
+	<select id="getallOrders"   parameterType="java.lang.String" resultType="net.seehope.hxfenxiao.pojo.Order2">
+		SELECT orders.*,product.productname
+		FROM orders,product
+		WHERE orders.pid=product.productid and sendid=#{sendid}
+		
+	</select>
+	
+	<select id="dealersQueryAllOrders" parameterType="java.lang.String" resultType="net.seehope.hxfenxiao.pojo.Order2">
+		SELECT orders.*,product.productname
+		FROM orders,product
+		WHERE (
+		(orders.receiverid=#{id} AND orders.delivery=1)
+		OR (orders.receiverid=#{id} AND orders.delivery=2)
+		OR (orders.sendid=#{id} AND orders.delivery=0)
+		OR (orders.sendid=#{id} AND orders.delivery=3))
+		AND orders.pid=product.productid
+		
+	</select>
+	
+	 <select id="dealersOneOrder" resultType="net.seehope.hxfenxiao.pojo.Order2">
+		SELECT orders.*,product.productname
+		FROM orders,product
+		WHERE orders.receiverid=#{id} AND orders.orderid=#{orderid}
+		
+	</select>
+	
+
+</mapper>

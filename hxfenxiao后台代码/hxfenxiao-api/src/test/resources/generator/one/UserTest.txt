@@ -1,0 +1,185 @@
+目标package: generator.one
+
+当前时间：
+2019-12-11
+10:43:28
+2019-12-11 10:43:28
+
+所有配置的属性信息:
+targetPackage - generator.one
+templateFormatter - tk.mybatis.mapper.generator.formatter.FreemarkerTemplateFormatter
+templatePath - generator/test-one.ftl
+targetProject - ../hxfenxiao-api/src/test/resources
+fileName - ${tableClass.shortClassName}Test.txt
+
+实体和表的信息：
+表名：user
+变量名：user
+小写名：user
+类名：User
+全名：net.seehope.hxfenxiao.pojo.User
+包名：net.seehope.hxfenxiao.pojo
+
+列的信息：
+=====================================
+主键：
+    -------------------------------------
+    列名：userid
+    列类型：VARCHAR
+    字段名：userid
+    注释：userid 用户id
+    类型包名：java.lang
+    类型短名：String
+    类型全名：java.lang.String
+    是否主键：false
+    是否可空：false
+    是否为BLOB列：false
+    是否为String列：true
+    是否为字符串列：true
+    是否为日期列：false
+    是否为时间列：false
+    是否为序列列：false
+    列长度：128
+    列精度：0
+
+基础列：
+    -------------------------------------
+    列名：uusername
+    列类型：VARCHAR
+    字段名：uusername
+    注释：uusername 账号
+    类型包名：java.lang
+    类型短名：String
+    类型全名：java.lang.String
+    是否主键：false
+    是否可空：true
+    是否为BLOB列：false
+    是否为String列：true
+    是否为字符串列：true
+    是否为日期列：false
+    是否为时间列：false
+    是否为序列列：false
+    列长度：32
+    列精度：0
+    -------------------------------------
+    列名：upassword
+    列类型：VARCHAR
+    字段名：upassword
+    注释：upassword 密码
+    类型包名：java.lang
+    类型短名：String
+    类型全名：java.lang.String
+    是否主键：false
+    是否可空：true
+    是否为BLOB列：false
+    是否为String列：true
+    是否为字符串列：true
+    是否为日期列：false
+    是否为时间列：false
+    是否为序列列：false
+    列长度：128
+    列精度：0
+    -------------------------------------
+    列名：uintegral
+    列类型：INTEGER
+    字段名：uintegral
+    注释：uintegral 积分
+    类型包名：java.lang
+    类型短名：Integer
+    类型全名：java.lang.Integer
+    是否主键：false
+    是否可空：true
+    是否为BLOB列：false
+    是否为String列：false
+    是否为字符串列：false
+    是否为日期列：false
+    是否为时间列：false
+    是否为序列列：false
+    列长度：10
+    列精度：0
+    -------------------------------------
+    列名：uphoneNum
+    列类型：VARCHAR
+    字段名：uphonenum
+    注释：uphoneNum 手机号码
+    类型包名：java.lang
+    类型短名：String
+    类型全名：java.lang.String
+    是否主键：false
+    是否可空：true
+    是否为BLOB列：false
+    是否为String列：true
+    是否为字符串列：true
+    是否为日期列：false
+    是否为时间列：false
+    是否为序列列：false
+    列长度：32
+    列精度：0
+    -------------------------------------
+    列名：uemail
+    列类型：VARCHAR
+    字段名：uemail
+    注释：uemail 邮箱
+    类型包名：java.lang
+    类型短名：String
+    类型全名：java.lang.String
+    是否主键：false
+    是否可空：true
+    是否为BLOB列：false
+    是否为String列：true
+    是否为字符串列：true
+    是否为日期列：false
+    是否为时间列：false
+    是否为序列列：false
+    列长度：32
+    列精度：0
+    -------------------------------------
+    列名：usex
+    列类型：CHAR
+    字段名：usex
+    注释：usex 性别
+    类型包名：java.lang
+    类型短名：String
+    类型全名：java.lang.String
+    是否主键：false
+    是否可空：true
+    是否为BLOB列：false
+    是否为String列：true
+    是否为字符串列：true
+    是否为日期列：false
+    是否为时间列：false
+    是否为序列列：false
+    列长度：1
+    列精度：0
+    -------------------------------------
+    列名：ustatus
+    列类型：INTEGER
+    字段名：ustatus
+    注释：ustatus 状态0 未开启 1 开启
+    类型包名：java.lang
+    类型短名：Integer
+    类型全名：java.lang.Integer
+    是否主键：false
+    是否可空：true
+    是否为BLOB列：false
+    是否为String列：false
+    是否为字符串列：false
+    是否为日期列：false
+    是否为时间列：false
+    是否为序列列：false
+    列长度：10
+    列精度：0
+
+Blob列：
+
+=====================================
+全部列：
+列名 - 字段名
+    userid - userid
+    uusername - uusername
+    upassword - upassword
+    uintegral - uintegral
+    uphoneNum - uphonenum
+    uemail - uemail
+    usex - usex
+    ustatus - ustatus

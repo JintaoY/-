@@ -1,0 +1,147 @@
+目标package: generator.one
+
+当前时间：
+2019-12-11
+10:43:28
+2019-12-11 10:43:28
+
+所有配置的属性信息:
+targetPackage - generator.one
+templateFormatter - tk.mybatis.mapper.generator.formatter.FreemarkerTemplateFormatter
+templatePath - generator/test-one.ftl
+targetProject - ../hxfenxiao-api/src/test/resources
+fileName - ${tableClass.shortClassName}Test.txt
+
+实体和表的信息：
+表名：admin
+变量名：admin
+小写名：admin
+类名：Admin
+全名：net.seehope.hxfenxiao.pojo.Admin
+包名：net.seehope.hxfenxiao.pojo
+
+列的信息：
+=====================================
+主键：
+    -------------------------------------
+    列名：adminid
+    列类型：VARCHAR
+    字段名：adminid
+    注释：adminid 用户ID
+    类型包名：java.lang
+    类型短名：String
+    类型全名：java.lang.String
+    是否主键：false
+    是否可空：false
+    是否为BLOB列：false
+    是否为String列：true
+    是否为字符串列：true
+    是否为日期列：false
+    是否为时间列：false
+    是否为序列列：false
+    列长度：32
+    列精度：0
+
+基础列：
+    -------------------------------------
+    列名：ausername
+    列类型：VARCHAR
+    字段名：ausername
+    注释：ausername 账号
+    类型包名：java.lang
+    类型短名：String
+    类型全名：java.lang.String
+    是否主键：false
+    是否可空：true
+    是否为BLOB列：false
+    是否为String列：true
+    是否为字符串列：true
+    是否为日期列：false
+    是否为时间列：false
+    是否为序列列：false
+    列长度：32
+    列精度：0
+    -------------------------------------
+    列名：apassword
+    列类型：VARCHAR
+    字段名：apassword
+    注释：apassword 密码
+    类型包名：java.lang
+    类型短名：String
+    类型全名：java.lang.String
+    是否主键：false
+    是否可空：true
+    是否为BLOB列：false
+    是否为String列：true
+    是否为字符串列：true
+    是否为日期列：false
+    是否为时间列：false
+    是否为序列列：false
+    列长度：128
+    列精度：0
+    -------------------------------------
+    列名：aphoneNum
+    列类型：VARCHAR
+    字段名：aphonenum
+    注释：aphoneNum 电话
+    类型包名：java.lang
+    类型短名：String
+    类型全名：java.lang.String
+    是否主键：false
+    是否可空：true
+    是否为BLOB列：false
+    是否为String列：true
+    是否为字符串列：true
+    是否为日期列：false
+    是否为时间列：false
+    是否为序列列：false
+    列长度：32
+    列精度：0
+    -------------------------------------
+    列名：aemail
+    列类型：VARCHAR
+    字段名：aemail
+    注释：aemail 邮箱
+    类型包名：java.lang
+    类型短名：String
+    类型全名：java.lang.String
+    是否主键：false
+    是否可空：true
+    是否为BLOB列：false
+    是否为String列：true
+    是否为字符串列：true
+    是否为日期列：false
+    是否为时间列：false
+    是否为序列列：false
+    列长度：32
+    列精度：0
+    -------------------------------------
+    列名：astatus
+    列类型：INTEGER
+    字段名：astatus
+    注释：astatus 状态0 未开启 1 开启
+    类型包名：java.lang
+    类型短名：Integer
+    类型全名：java.lang.Integer
+    是否主键：false
+    是否可空：true
+    是否为BLOB列：false
+    是否为String列：false
+    是否为字符串列：false
+    是否为日期列：false
+    是否为时间列：false
+    是否为序列列：false
+    列长度：10
+    列精度：0
+
+Blob列：
+
+=====================================
+全部列：
+列名 - 字段名
+    adminid - adminid
+    ausername - ausername
+    apassword - apassword
+    aphoneNum - aphonenum
+    aemail - aemail
+    astatus - astatus

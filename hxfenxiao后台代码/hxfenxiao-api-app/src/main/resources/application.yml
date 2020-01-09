@@ -1,0 +1,34 @@
+server:  port: 8081  context-path: /  session:    timeout: 7200
+
+spring:
+  datasource:
+    url: jdbc:mysql://115.29.174.228:3306/shopsystem?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+    username: shopsystem
+    password: WEHDCcR3nY4JRDTW
+    driver-class-name: com.mysql.jdbc.Driver
+    druid:
+      initial-size: 1
+      min-idle: 1
+      max-active: 20
+      test-on-borrow: true
+      stat-view-servlet:
+        allow: true
+  redis:
+    database: 0
+    host: 115.29.174.228
+    port: 6379
+    password: 123456
+    timeout: 5000  session:    store-type: redis
+    
+  
+logging:
+  level:
+    net.seehope.hxfenxiao: debug  
+    
+    
+mybatis:
+  mapper-locations: classpath*:mappers/*.xml
+  
+  
+  
+  
